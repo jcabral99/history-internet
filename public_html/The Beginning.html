@@ -11,11 +11,12 @@
     <title>The Beginning</title>
     <style>
         .navbar a {
-            float: left;
             display: block;
             color: #f2f2f2;
             padding: 14px 16px;
             text-decoration: none;
+
+
         }
         .navbar a:hover {
             background: #ddd;
@@ -36,21 +37,29 @@
         <div class="col">
             <nav class="navbar navbar-expand-lg bg-dark" style="height: 100px">
                 <div class="container-fluid">
-                    <a class="navbar-brand" style="width: 690px; font-weight: bold; font-size: 30px">The History of the Internet</a>
+                    <a class="navbar-brand" style="width: 450px; font-weight: bold; font-size: 30px">The History of the Internet</a>
                     <div id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html" style="font-size: 20px">Home</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="The%20Beginning.html" style="font-size: 20px">The Beginning</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="Browser%20Wars.html" style="font-size: 20px">Browser Wars</a>
+                            <li class="nav-item dropdown" style="float: right">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" style="font-size: 20px" aria-expanded="false">Internet History</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="The%20Beginning.html" style="color: black">The Beginning</a></li>
+                                    <li><a class="dropdown-item" href="Browser%20Wars.html" style="color: black">Browser Wars</a></li>
+                                    <li><a class="dropdown-item" href="Dot%20Com%20Boom.html" style="color: black">Dot Com Boom</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="Dot%20Com%20Boom.html" style="font-size: 20px">Dot Com Boom</a>
-                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" style="font-size: 20px" aria-expanded="false">Python</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" style="color: black">Concepts & Glossary</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: black">Triple A Testing</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: black">OOP</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: black">Separated link</a></li>
+                                    </ul>
                         </ul>
                     </div>
                 </div>
