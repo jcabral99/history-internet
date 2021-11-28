@@ -55,7 +55,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#" style="color: black">Concepts & Glossary</a></li>
                                     <li><a class="dropdown-item" href="#" style="color: black">Triple A Testing</a></li>
-                                    <li><a class="dropdown-item" href="#" style="color: black">Object Oriented Programming</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: black">OOP</a></li>
                                     <li><a class="dropdown-item" href="#" style="color: black">Separated link</a></li>
                                 </ul>
                             </li>
@@ -79,69 +79,80 @@
     <br>
     <div class="row">
 
-        <div class="col-9">
-            <h3>How it Started</h3>
+        <div class="col-8">
+            <h3>Pylint Beginners</h3>
             <p>
-                <code>
-                    jfaisdjfskf
-                </code>
+                Every good programmer will know how to use Python, but they will also know how to apply Pylint to any code that they are writing. Pylint will allow for you to test the information that you are writing up. It will show any user what errors they are making within their code, which will help them avoid problems later on.
             </p>
+            <br>
             <p>
-                As the military was trying to find way to communicate circuit switching was introduced. It gave a straight connect for the military to communicate, the only downfall being that it could be easily destroyed and connection could be a total lose. Paul Baran introduced "Fishnet Network," which created made sure that messages were still being communicated through a network even if half of the signal got lost. This idea broke up messages into Packets and would find any available paths and later come back together to deliver the full message.
+                There are a series of steps to take to be able to implement Pylint within your code. You will begin by installing Pylint:
+            </p>
+            <ul>
+                <li>You need to add the file <code>.pylintrc</code>, which will allow for pylint to be configured</li>
+                <li>Typically, the <code>.pylintrc</code> file will have a makeup of what you want to be checked and what you DO NOT want to be checked for specific errors</li>
+                <li>You will also need to add a <code>requirements.txt</code> file which will include a list of what tests you want to run</li>
+                <dd> - Some examples would be <code>pytest-cov, pytest, pytest-pylint</code></dd>
+                <li>Once those files are created you will need to run "Pip Install" within the terminal. This will make sure that all tests are configured and you will be able to test the code through commands</li>
+                <li>Within the terminal you will write <code>pip install -r requirements.txt</code> this command will configure all the tests listed out in the <code>requirement.txt</code> file</li>
+                <li>Once that is complete you are able to run the command: <code>pytest --pylint</code></li>
+                <li>The commands will run and it will give back any errors of failed code. It will also give suggestions on how to help fix any errors within the code and will also show what test have passed within your code.</li>
+            </ul>
+            <p>
+                All of these steps will help you run Pylint through your code. It will help any beginner find errors within their code and ensure that they are able to fix any issues.
             </p>
         </div>
         <div class="col">
-            <img src="https://images.pexels.com/photos/73909/nuclear-weapons-test-nuclear-weapon-weapons-test-explosion-73909.jpeg?cs=srgb&dl=pexels-pixabay-73909.jpg&fm=jpg"
-                 width="300" height="300" alt="explosion">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?cs=srgb&dl=pexels-christina-morillo-1181671.jpg&fm=jpg"
+                 width="400" height="400" alt="python">
         </div>
     </div>
+    <br>
     <br>
     <br>
     <div class="row">
 
-        <div class="col-9">
-            <h3>ARPA</h3>
+        <div class="col-8">
+            <h3>Object-Oriented Programming Glossary</h3>
             <p>
-                In the late 1950's the Advanced Research Project Agency (ARPA), was in charge of the space program which included anything to do with computer science. In the beginning stages, computer science was kept incubated until it was put into the proper hands. Bob Taylor, was the pioneer of ARPA created the new idea of Time Sharing. This allowed for a person to sit at a terminal and type questions and programs as answers would appear back in seconds. A terminal allowed for on common network to talk to all systems.
+                Below you will find a glossary of terms that will help you understand some basics of Object-Oriented Programming (OOP). If you navigate to the Python dropdown menu in the OOP tab you will be able to learn more about how different concepts are applied within a program.
             </p>
-            <p>
-                Since these terminals could not speak to each other, Larry Roberts built the first experimental connection between two computers. He found that you are able to distribute the network to more computers by building identical mini computers. As we began approaching the 1970's they realized that this idea could evolve into the ARPANET, which was going to be millions of mini computers to help connect networks. To build such a system there was a need for smart out-of-the-box thinkers to participate in what we would later know as the Internet.
-            </p>
+            <ul>
+                <li><b>Object</b> – An instance of a class that is created at runtime. In C#, an instance is created with the new keyword</li>
+                <li><b>Class</b> – Code describing a specific entity in the application. Class contains the code defining the properties and methods</li>
+                <dd>- Example: Student or address</dd>
+                <li><b>Property</b> – Code defining the data managed by the class</li>
+                <dd>- Example: StudentName or EmailAddress</dd>
+                <li><b>Method</b> – code defining the actions or behaviors of the class. Methods are defined in the code with C# functions</li>
+                <dd>- Example: Validate or CalculateTotal</dd>
+                <li><b>Constructor</b> – Code that is executed each time an instance of the class is created</li>
+                <li><b>Unit test</b> – Ensure that each individual part of the code is working well and that it is supposed to work</li>
+                <li><b>Object-Oriented Programming</b> – A design and building application that is easy, natural, well- crafted, and testable by focusing on objects that interact cleanly with one another</li>
+                <li><b>Static</b> - </li>
+                <li><b>Class Method</b> - </li>
+                <li><b>Façade</b> - </li>
+                <li><b>Design Patterns Used</b> - </li>
+                <li><b>Fixture</b> - </li>
+                <li><b>Type Hint</b> - </li>
+                <li><b>Type Cast</b> - </li>
+                <li><b>Factory</b> - </li>
+                <li><b>Instantiation</b> - </li>
+                <li><b>Namespace</b> - </li>
+            </ul>
 
         </div>
         <div class="col">
-            <img src="https://live.staticflickr.com/2385/2404303581_1d5f2425e4.jpg"
-                 width="300" height="300" alt="computer">
+            <img src="https://images.pexels.com/photos/5929346/pexels-photo-5929346.jpeg?cs=srgb&dl=pexels-ravi-kant-5929346.jpg&fm=jpg"
+                 width="400" height="500" alt="dictionary">
         </div>
     </div>
     <br>
-    <br>
-    <div class="row">
-
-        <div class="col-15" style="text-align: center">
-            <h3>The Internet</h3>
-            <p>
-                On June 9th 1992 Congress passed a bill taking the internet out of the exclusive hands of government and into the public. The following November President Bush signed it into law. A huge surge of commercial energy, competition and progress came from the use of Internet.  A physicist named Tim Berners-lee at the CERN Research Institute in Switzerland created an easier way to access all the information in one place. He developed the software to more easily follow threads of knowledge within the information stored throughout the internet. He named his invention the World Wide Web. It started growing on itself that went from just Tim in his little computer to a worldwide phenomenon carrying billions going on trillions of dollars of Commerce. The World Wide Web made it easier to follow threads of information.
-            </p>
-        </div>
-
-    </div>
     <br>
 </div>
 <br>
 <br>
 <br>
-
-<!-- Optional JavaScript; choose one of the two! -->
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
--->
 <div class="row">
     <footer id="footer" style="text-align: center">
         Juliann Cabral&#169; <br>
