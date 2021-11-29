@@ -74,39 +74,78 @@
     </div>
     <br>
     <div class="row">
-        <h1>Object Oriented Programming</h1>
+        <h1>Object Oriented Programming (OOP)</h1>
     </div>
     <br>
     <br>
     <div class="row">
 
-        <div class="col-9">
-            <h3>How it Started</h3>
+        <div class="col-8">
+            <h3>Principles</h3>
             <p>
-                We date back to the 1950's when JCR Licklider a professor at MIT had a vision that the computer would allow for easier communication and become a useful tool that would people would utilize to share information. By 1957, the Soviets launched Sputnik, leaving the United States in a vulnerable position. Once this occurred they felt a huge push to utilize computers to help with their defense strategies.
+                When using OOP there are 4 main principles that you can follow: Encapsulation, Inheritance, Polymorphism, and Abstraction.
             </p>
-            <p>
-                As the military was trying to find way to communicate circuit switching was introduced. It gave a straight connect for the military to communicate, the only downfall being that it could be easily destroyed and connection could be a total lose. Paul Baran introduced "Fishnet Network," which created made sure that messages were still being communicated through a network even if half of the signal got lost. This idea broke up messages into Packets and would find any available paths and later come back together to deliver the full message.
-            </p>
+            <ul>
+                <li><b>Encapsulation: </b></li> Allows for a restriction in access to methods and variables; prevents data from direct modification; we denote private attributes using underscore as the prefix
+                <li><b>Inheritance: </b></li> Is a way of creating a new class while using details from an existing class without modifying it – parent and child class – the child derives from the parent class and all their attributes
+                <li><b>Polymorphism: </b></li> Ability to use a common interface for multiple forms of data types. Allows you to use a class exactly like its parent so there is no confusion with mixing, but each child class keeps its own method as is.
+                <li><b>Abstraction: </b></li> Considered the blueprint for other classes. Allows you to create a set of methods that must be created within any child classes built from the abstract class.
+            </ul>
         </div>
         <div class="col">
-            <img src="https://images.pexels.com/photos/73909/nuclear-weapons-test-nuclear-weapon-weapons-test-explosion-73909.jpeg?cs=srgb&dl=pexels-pixabay-73909.jpg&fm=jpg"
-                 width="300" height="300" alt="explosion">
+            <img src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?cs=srgb&dl=pexels-christina-morillo-1181673.jpg&fm=jpg"
+                 width="400" height="400" alt="programming">
         </div>
     </div>
     <br>
     <br>
     <div class="row">
 
-        <div class="col-9">
-            <h3>ARPA</h3>
+        <div class="col-8">
+            <h3>Using OOP</h3>
             <p>
-                In the late 1950's the Advanced Research Project Agency (ARPA), was in charge of the space program which included anything to do with computer science. In the beginning stages, computer science was kept incubated until it was put into the proper hands. Bob Taylor, was the pioneer of ARPA created the new idea of Time Sharing. This allowed for a person to sit at a terminal and type questions and programs as answers would appear back in seconds. A terminal allowed for on common network to talk to all systems.
+                We will use the same Calculator program to show how the principles of OOP are used. We will begin with Abstraction. Knowing the definition will help us break down exactly how it is used in the calculator.
+            </p>
+            <ul style="list-style-type: none">
+                <li><b>Abstraction:</b></li>
+                <li><code style="color:cadetblue">This is our calculation base class/ Abstract class</code></li>
+                <li><code style="color:red">class Calculation</code></li>
+                <li><code style="color: red">def _init_(self,value_a, value_b)</code></li>
+                <li><code style="color: red">self.value_a = value_a</code></li>
+                <li><code style="color: red">self.value_b = value_b</code></li>
+            </ul>
+            <p>
+                We are creating a Calculation class which is known as the base or abstract class that will be used throughout our calculator program. This sets a blueprint for other class when needing to call the abstract class.
+            </p>
+            <ul style="list-style-type: none">
+                <li><b>Encapsulation/ Inheritance</b></li>
+                <li><code style="color:cadetblue">This is the addition calculation that is being inherits the Value A and Value B from the Calculation Class</code></li>
+                <li><code style="color:red">from Calc.calculation import Calculation</code></li>
+                <li><code style="color: red">class Addition(calculation)</code></li>
+                <li><code style="color:cadetblue">This addition class has one method to get the result of the calculation A and B come fro the calculation parent</code></li>
+                <li><code style="color: red">def getresult(self)</code></li>
+                <li><code style="color:cadetblue">You need to use self to reference the data contained in the instance of the object. This is Encapsulation.</code></li>
+                <li><code style="color: red">return self.value_a + self.value_b</code></li>
+            </ul>
+            <p>
+                Encapsulation is being used within the addition function by calling the direct calculation class. We then use self to help us add the values together. No other class is allowed to touch this function since we are keeping it private.
             </p>
             <p>
-                Since these terminals could not speak to each other, Larry Roberts built the first experimental connection between two computers. He found that you are able to distribute the network to more computers by building identical mini computers. As we began approaching the 1970's they realized that this idea could evolve into the ARPANET, which was going to be millions of mini computers to help connect networks. To build such a system there was a need for smart out-of-the-box thinkers to participate in what we would later know as the Internet.
+                We also see the way that inheritance is being used within this code. The addition function is calling upon the Calculation class for the Value A and B. You will see that we end up using the Calculation class throughout the other functions of the calculator as well. The Calculation class is known as the parent while the other functions are the children. They all inherit Value A and B from their parent.
             </p>
-
+            <ul style="list-style-type: none">
+                <li><b>Polymorphism</b></li>
+                <li><code style="color:cadetblue">Testing the Calculator</code></li>
+                <li><code style="color:red">from calculator.calculator import Calculator</code></li>
+                <li><code style="color: red">def test_calculator_add(clearhistory)</code></li>
+                <li><code style="color:cadetblue">testing the add function of the calculator</code></li>
+                <li><code style="color: red">assert Calculator.add_number(1,2) == 3</code></li>
+                <li><code style="color: red">assert Calculator.add_number(2,2) == 4</code></li>
+                <li><code style="color: red">assert Calculator.history_count() == 2</code></li>
+            </ul>
+            <p>
+                Polymorphism means many forms, so the same function is being used for different types. We this is happening when testing the addition function. We known that addition has a class created that will add value a and value b. So by testing the code we are able to add many different numbers together and even count how many calculations have been done.
+            </p>
         </div>
         <div class="col">
             <img src="https://live.staticflickr.com/2385/2404303581_1d5f2425e4.jpg"
@@ -118,9 +157,12 @@
     <div class="row">
 
         <div class="col-15" style="text-align: center">
-            <h3>The Internet</h3>
+            <h3>Find out More</h3>
             <p>
-                On June 9th 1992 Congress passed a bill taking the internet out of the exclusive hands of government and into the public. The following November President Bush signed it into law. A huge surge of commercial energy, competition and progress came from the use of Internet.  A physicist named Tim Berners-lee at the CERN Research Institute in Switzerland created an easier way to access all the information in one place. He developed the software to more easily follow threads of knowledge within the information stored throughout the internet. He named his invention the World Wide Web. It started growing on itself that went from just Tim in his little computer to a worldwide phenomenon carrying billions going on trillions of dollars of Commerce. The World Wide Web made it easier to follow threads of information.
+                We see that through the calculator many of the principles are used within each other to create a program. The more you understand how to use the principles within OOP the easier it will become. You can click the link below to find more example of these principles and how they are used within the calculator program.
+            </p>
+            <p>
+                <a href="https://github.com/jcabral99/My-Calculator/tree/Triple_A_Testing"><link> Click Here </link></a>,to navigate to the GitHub Repo, there you can click on the file "Calc, Calculator, and Test" to find different examples of how the OOP principles are being used.
             </p>
         </div>
 

@@ -80,37 +80,65 @@
     <br>
     <div class="row">
 
-        <div class="col-9">
-            <h3>How it Started</h3>
+        <div class="col-8">
+            <h3>Why AAA Testing</h3>
             <p>
-                We date back to the 1950's when JCR Licklider a professor at MIT had a vision that the computer would allow for easier communication and become a useful tool that would people would utilize to share information. By 1957, the Soviets launched Sputnik, leaving the United States in a vulnerable position. Once this occurred they felt a huge push to utilize computers to help with their defense strategies.
+                Triple "A" Testing or AAA is important because it helps with writing good tests and structure cases for your code. The importance of the process allows for time to be saved and being able to test your work throughout the process which leads to cheaper, faster, and easier work. It makes the code a more agile process. It has been shown that AAA testing improves the quality of the code which later ensures that software bugs are found more easily and earlier on. The overall testing process gives any coder an exact root to the error without having to complete th code.
             </p>
             <p>
-                As the military was trying to find way to communicate circuit switching was introduced. It gave a straight connect for the military to communicate, the only downfall being that it could be easily destroyed and connection could be a total lose. Paul Baran introduced "Fishnet Network," which created made sure that messages were still being communicated through a network even if half of the signal got lost. This idea broke up messages into Packets and would find any available paths and later come back together to deliver the full message.
+                The A's stand for Arrange, Act, and Assert. The structure of the code will follow those exact words.
             </p>
+            <dd><b> - Arrange:</b> Inputs and targets; sets up the test case</dd>
+            <dd><b> - Act:</b> Target behavior; covers the main thing to be tested; calls a function or method</dd>
+            <dd><b> - Assert:</b> Expected outcomes; should elicit some sort of response; ultimately determines if the test passes or fails</dd>
         </div>
         <div class="col">
-            <img src="https://images.pexels.com/photos/73909/nuclear-weapons-test-nuclear-weapon-weapons-test-explosion-73909.jpeg?cs=srgb&dl=pexels-pixabay-73909.jpg&fm=jpg"
-                 width="300" height="300" alt="explosion">
+            <img src="https://images.pexels.com/photos/6804581/pexels-photo-6804581.jpeg?cs=srgb&dl=pexels-cottonbro-6804581.jpg&fm=jpg"
+                 width="400" height="400" alt="coding">
         </div>
     </div>
     <br>
     <br>
     <div class="row">
 
-        <div class="col-9">
-            <h3>ARPA</h3>
+        <div class="col-8">
+            <h3>AAA Testing Tutorial</h3>
             <p>
-                In the late 1950's the Advanced Research Project Agency (ARPA), was in charge of the space program which included anything to do with computer science. In the beginning stages, computer science was kept incubated until it was put into the proper hands. Bob Taylor, was the pioneer of ARPA created the new idea of Time Sharing. This allowed for a person to sit at a terminal and type questions and programs as answers would appear back in seconds. A terminal allowed for on common network to talk to all systems.
+                The only way to understand what AAA Testing means is to see how it works within the coding process. Below you will find an example of arrange, act, and assert demonstrated in the coding of a calculator.
             </p>
             <p>
-                Since these terminals could not speak to each other, Larry Roberts built the first experimental connection between two computers. He found that you are able to distribute the network to more computers by building identical mini computers. As we began approaching the 1970's they realized that this idea could evolve into the ARPANET, which was going to be millions of mini computers to help connect networks. To build such a system there was a need for smart out-of-the-box thinkers to participate in what we would later know as the Internet.
+                All of the code will be written in Python. The following are examples of AAA testing for addition and multiplication.
             </p>
+            <ul>
+                <li>Testing the Add function:</li>
+            </ul>
+                <ul style="list-style-type: none">
+                    <li><code style="color:red">def test_calculator_add():</code></li>
+                    <li><code style="color:cadetblue">#Arrange by instantiation the calc class</code></li>
+                    <li><code style="color: red">calc = Calculator()</code></li>
+                    <li><code style="color:cadetblue">#Act by calling the method to test</code></li>
+                    <li><code style="color: red">calc.add_number(4)</code></li>
+                    <li><code style="color:cadetblue">#Assert that the results are correct</code></li>
+                    <li><code style="color: red">assert calc.result == 4</code></li>
+                </ul>
+            <ul>
+                <li>Testing the Multiplication function:</li>
+            </ul>
+            <ul style="list-style-type: none">
+                <li><code style="color:red">def test_calculator_multiply():</code></li>
+                <li><code style="color:cadetblue">#Arrange by instantiation the calc class</code></li>
+                <li><code style="color: red">calc = Calculator()</code></li>
+                <li><code style="color:cadetblue">#Act by calling the method to test</code></li>
+                <li><code style="color: red">result = calc.multiply_number(1,2)</code></li>
+                <li><code style="color:cadetblue">#Assert that the results are correct</code></li>
+                <li><code style="color: red">assert calc.result == 2</code></li>
+            </ul>
+
 
         </div>
         <div class="col">
-            <img src="https://live.staticflickr.com/2385/2404303581_1d5f2425e4.jpg"
-                 width="300" height="300" alt="computer">
+            <img src="https://images.pexels.com/photos/5238670/pexels-photo-5238670.jpeg?cs=srgb&dl=pexels-olya-kobruseva-5238670.jpg&fm=jpg"
+                 width="400" height="600" alt="quote">
         </div>
     </div>
     <br>
@@ -118,10 +146,11 @@
     <div class="row">
 
         <div class="col-15" style="text-align: center">
-            <h3>The Internet</h3>
+            <h3>Find Out More</h3>
             <p>
-                On June 9th 1992 Congress passed a bill taking the internet out of the exclusive hands of government and into the public. The following November President Bush signed it into law. A huge surge of commercial energy, competition and progress came from the use of Internet.  A physicist named Tim Berners-lee at the CERN Research Institute in Switzerland created an easier way to access all the information in one place. He developed the software to more easily follow threads of knowledge within the information stored throughout the internet. He named his invention the World Wide Web. It started growing on itself that went from just Tim in his little computer to a worldwide phenomenon carrying billions going on trillions of dollars of Commerce. The World Wide Web made it easier to follow threads of information.
+                You can see that each AAA has a code that goes along with it. It creates an easy way to test things and for another person to go in a see exactly what is being done. Each of the lines of code are calling on different files within the program to test whether or not it is working. To be able to write a proper AAA Test you need to have all other files set up with what you want to be tested. You can look further into this example by clicking on the link below. This link will take you to a GitHub Repository that will show the full calculator and tests written using AAA Testing.
             </p>
+            <p>By clicking on this link <a href="https://github.com/jcabral99/My-Calculator/tree/Triple_A_Testing"><link> Tutorial </link></a>,you can click on the file "Calculatorr" and "Triple A Testing" to see the functions written out and then the tests that go with those functions.</p>
         </div>
 
     </div>
